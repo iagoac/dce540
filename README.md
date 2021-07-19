@@ -13,7 +13,7 @@
 
 As aulas serão todas ministradas on-line. Aulas teóricas expositivas serão realizadas de maneira assíncrona, enquanto aulas práticas serão realizadas de maneira síncrona. Aulas de dúvidas, discussões e apresentações serão realizadas de forma síncrona. Todos os slides e vídeos utilizados serão disponibilizados assim que estiverem prontos.
 
-  - **19/07** - Aula 01: Introdução a disciplina DCE619 (Assíncrona)
+  - **19/07** - [Aula 01: Introdução a disciplina DCE540 (Assíncrona)] (https://youtu.be/6b3pcEhdr5Q)
   - **21/07** - Aula 02: Introdução a sistemas distribuídos (Assíncrona)
   - **26/07** - Aula 03: Processos (Assíncrona)
   - **28/07** - Aula 04: Arquiteturas distribuídas (Assíncrona)
