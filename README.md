@@ -1,4 +1,4 @@
-# Disciplina DCE540 - Programação Paralela e Distribuída
+# Disciplina DCE540 - Computação Paralela e Distribuída
 
 ## Prof. Iago A. Carvalho
 
