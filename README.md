@@ -16,7 +16,7 @@ As aulas serão todas ministradas on-line. Aulas teóricas expositivas serão re
   - **19/07** - [Aula 01: Introdução a disciplina DCE540 (Assíncrona)](https://youtu.be/6b3pcEhdr5Q)
   - **21/07** - [Aula 02: Introdução a sistemas distribuídos (Assíncrona)](https://youtu.be/o95kWrMJDCE)
   - **26/07** - [Aula 03: Processos (Assíncrona)](https://youtu.be/hbe23CGlGbY)
-  - **28/07** - Aula 04: Arquiteturas distribuídas (Assíncrona)
+  - **28/07** - [Aula 04: Arquiteturas distribuídas (Assíncrona)](https://youtu.be/O2ewQnW3J_g)
   - **02/08** - Aula 05: Arquiteturas distribuídas - Continuação (Assíncrona)
   - **04/08** - Aula 06: Fundamentos de comunicação em ambientes distribuídos (Assíncrona)
   - **09/08** - Aula 07: Remote Procedure Calls (RPC) (Assíncrona)
