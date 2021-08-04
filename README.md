@@ -18,7 +18,7 @@ As aulas serão todas ministradas on-line. Aulas teóricas expositivas serão re
   - **26/07** - [Aula 03: Processos (Assíncrona)](https://youtu.be/hbe23CGlGbY)
   - **28/07** - [Aula 04: Arquiteturas distribuídas (Assíncrona)](https://youtu.be/O2ewQnW3J_g)
   - **02/08** - [Aula 05: Arquiteturas distribuídas - Continuação (Assíncrona)](https://youtu.be/6dzSmDMYLXE)
-  - **04/08** - Aula 06: Fundamentos de comunicação em ambientes distribuídos (Assíncrona)
+  - **04/08** - [Aula 06: Fundamentos de comunicação entre processos (Assíncrona)](https://youtu.be/RfRdrYEUSAc)
   - **09/08** - Aula 07: Remote Procedure Calls (RPC) (Assíncrona)
   - **11/08** - Aula 08: Comunicação por mensagens (Assíncrona)
   - **16/08** - Aula 09: Message Passing Interface (MPI) (Assíncrona)
