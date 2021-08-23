@@ -23,7 +23,7 @@ As aulas serão todas ministradas on-line. Aulas teóricas expositivas serão re
   - **11/08** - [Aula 08: Comunicação por mensagens (Assíncrona)](https://youtu.be/P1g0ImoZNXQ)
   - **16/08** - [Aula 09: Message Passing Interface (MPI) (Assíncrona)](https://youtu.be/7Czx_pSyf6k)
   - **18/08** - [Aula 10: Modelos persistentes de comunicação por mensagens (Assíncrona)](https://youtu.be/qQfd7W0HjEE)
-  - **23/08** - Aula 11: Comunicação multicast (Assíncrona)
+  - **23/08** - [Aula 11: Comunicação multicast (Assíncrona)](https://youtu.be/-MekStw97B4)
   - **25/08** - Aula 12: Dúvidas (Síncrona)
   - **30/08** - Aula 13: Prova 01
   - **01/09** - Aula 14: Correção da prova e comentários gerais (Assíncrona)
