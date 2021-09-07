@@ -27,7 +27,7 @@ As aulas serão todas ministradas on-line. Aulas teóricas expositivas serão re
   - **25/08** - Aula 12: Dúvidas (Síncrona) - [Sala do Meet](https://meet.google.com/lookup/eojno2f6ec)
   - **30/08** - Aula 13: Prova 01
   - **01/09** - [Aula 14: Correção da prova e comentários gerais (Assíncrona)](https://youtu.be/43qUTASRLIw)
-  - **06/09** - Aula 15: Sincronização e coordenação (Assíncrona)
+  - **06/09** - [Aula 15: Sincronização e coordenação (Assíncrona)](https://youtu.be/z6b9UGzHpUA)
   - **08/09** - Aula 16: Exclusão mútua (Assíncrona)
   - **13/09** - Aula 17: Algoritmos de eleições (Assíncrona)
   - **15/09** - Aula 18: Dúvidas (Síncrona)
