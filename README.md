@@ -34,7 +34,7 @@ As aulas serão todas ministradas on-line. Aulas teóricas expositivas serão re
   - **20/09** - Aula 19: Prova 02
   - **22/09** - [Aula 20: Correção da prova e comentários gerais (Assíncrona)](https://youtu.be/1iJUReYnjXA)
   - **27/09** - [Aula 21: Consistência de dados (Assíncrona)](https://youtu.be/7_GfgIVrANk)
-  - **29/09** - Aula 22: Modelos de consistência centralizados no cliente (Assíncrona)
+  - **29/09** - [Aula 22: Modelos de consistência centralizados no cliente (Assíncrona)](https://youtu.be/0WxnHSKezhA)
   - **04/10** - Aula 23: Replicação de dados (Assíncrona)
   - **06/10** - Aula 24: Protocolos para consistência de dados (Assíncrona)
   - **11/10** - Aula 25: Tolerância a falhas (Assíncrona)
