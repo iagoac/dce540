@@ -13,7 +13,7 @@
 
 As aulas serão todas ministradas on-line. Aulas teóricas expositivas serão realizadas de maneira assíncrona, enquanto aulas práticas serão realizadas de maneira síncrona. Aulas de dúvidas, discussões e apresentações serão realizadas de forma síncrona. Todos os slides e vídeos utilizados serão disponibilizados assim que estiverem prontos.
 
-  - **09/11** - Aula 01: Introdução a disciplina DCE540 (Assíncrona)
+  - **09/11** - [Aula 01: Introdução a disciplina DCE540 (Assíncrona)](https://youtu.be/zsWpkaxGADE)
   - **11/11** - Aula 02: Introdução a sistemas distribuídos (Assíncrona)
   - **16/11** - Aula 03: Processos (Assíncrona)
   - **18/11** - Aula 04: Fundamentos de comunicação entre processos (Assíncrona)
