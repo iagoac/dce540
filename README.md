@@ -11,7 +11,7 @@
  
 #### Histórico e planejamento das aulas
 
-As aulas serão todas ministradas on-line. Aulas teóricas expositivas serão realizadas de maneira assíncrona, enquanto aulas práticas serão realizadas de maneira síncrona. Aulas de dúvidas, discussões e apresentações serão realizadas de forma síncrona. Todos os slides e vídeos utilizados serão disponibilizados assim que estiverem prontos.
+As aulas serão todas ministradas on-line. Aulas teóricas expositivas serão realizadas de maneira assíncrona, enquanto aulas de dúvidas serão realizadas de maneira síncrona.  Todos os slides e vídeos utilizados serão disponibilizados assim que estiverem prontos.
 
   - **09/11** - [Aula 01: Introdução a disciplina DCE540 (Assíncrona)](https://youtu.be/zsWpkaxGADE)
   - **11/11** - Aula 02: Introdução a sistemas distribuídos (Assíncrona)
@@ -62,7 +62,7 @@ As avaliações somarão um total de 100 pontos. Um aluno é considerado **aprov
 ##### Pontuação máxima de cada atividade
 | Prova 1  | Prova 2  |  Prova 3 | Listas de exercício | 
 | :------------: | :------------: | :------------: | :------------: |
-| 25 pontos  | 25 pontos  | 25 pontos  | 25 pontos  |
+| 30 pontos  | 30 pontos  | 30 pontos  | 10 pontos  |
 
 ---
 
