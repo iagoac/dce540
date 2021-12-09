@@ -21,7 +21,7 @@ As aulas serão todas ministradas on-line. Aulas teóricas expositivas serão re
   - **25/11** - [Aula 06: Message Passing Interface (MPI) (Assíncrona)](https://youtu.be/7Czx_pSyf6k)
   - **30/11** - [Aula 07: Modelos persistentes de comunicação por mensagens (Assíncrona)](https://youtu.be/qQfd7W0HjEE)
   - **02/12** - Aula 08: Comunicação multicast (Assíncrona)
-  - **07/12** - Aula 09: Remote Procedure Calls (RPC) (Assíncrona)
+  - **07/12** - [Aula 09: Remote Procedure Calls (RPC) (Assíncrona)](https://youtu.be/weTd7jlh13I)
   - **09/12** - Aula 10: Arquiteturas distribuídas (Assíncrona)
   - **14/12** - Aula 11: Arquiteturas distribuídas - Continuação (Assíncrona)
   - **16/12** - Aula 12: Dúvidas (Síncrona)
