@@ -25,8 +25,8 @@ As aulas serão todas ministradas on-line. Aulas teóricas expositivas serão re
   - **09/12** - [Aula 10: Arquiteturas distribuídas (Assíncrona)](https://youtu.be/O2ewQnW3J_g)
   - **14/12** - [Aula 11: Arquiteturas distribuídas - Continuação (Assíncrona)](https://youtu.be/6dzSmDMYLXE)
   - **16/12** - Aula 12: Dúvidas (Síncrona)
-  - **21/12** - Aula 13: Prova 01
-  - **23/12** - Aula 14: Correção da prova e comentários gerais (Assíncrona)
+  - **25/01** - Aula 13: Prova 01
+  - **26/01** - Aula 14: Correção da prova e comentários gerais (Assíncrona)
   - **27/01** - Aula 15: Sincronização e coordenação (Assíncrona)
   - **01/02** - Aula 16: Exclusão mútua (Assíncrona)
   - **03/02** - Aula 17: Algoritmos de eleições (Assíncrona)
