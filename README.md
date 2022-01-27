@@ -27,9 +27,9 @@ As aulas serão todas ministradas on-line. Aulas teóricas expositivas serão re
   - **16/12** - Aula 12: Dúvidas (Síncrona)
   - **25/01** - Aula 13: Prova 01
   - **26/01** - Aula 14: Correção da prova e comentários gerais (Assíncrona)
-  - **27/01** - Aula 15: Sincronização e coordenação (Assíncrona)
-  - **01/02** - Aula 16: Exclusão mútua (Assíncrona)
-  - **03/02** - Aula 17: Algoritmos de eleições (Assíncrona)
+  - **27/01** - [Aula 15: Sincronização e coordenação (Assíncrona)](https://youtu.be/z6b9UGzHpUA)
+  - **01/02** - [Aula 16: Exclusão mútua (Assíncrona)](https://youtu.be/_Z-ObE_N8PI)
+  - **03/02** - [Aula 17: Algoritmos de eleições (Assíncrona)](https://youtu.be/F0dSgEKs8zw)
   - **08/02** - Aula 18: Dúvidas (Síncrona)
   - **10/02** - Aula 19: Prova 02
   - **15/02** - Aula 20: Correção da prova e comentários gerais (Assíncrona)
