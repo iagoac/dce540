@@ -25,13 +25,13 @@ As aulas serão todas ministradas on-line. Aulas teóricas expositivas serão re
   - **09/12** - [Aula 10: Arquiteturas distribuídas (Assíncrona)](https://youtu.be/O2ewQnW3J_g)
   - **14/12** - [Aula 11: Arquiteturas distribuídas - Continuação (Assíncrona)](https://youtu.be/6dzSmDMYLXE)
   - **16/12** - Aula 12: Dúvidas (Síncrona)
-  - **25/01** - Aula 13: Prova 01
+  - **25/01** - [Aula 13: Prova 01](https://github.com/iagoac/dce540/blob/main/provas/prova_01.pdf)
   - **26/01** - Aula 14: Correção da prova e comentários gerais (Assíncrona)
   - **27/01** - [Aula 15: Sincronização e coordenação (Assíncrona)](https://youtu.be/z6b9UGzHpUA)
   - **01/02** - [Aula 16: Exclusão mútua (Assíncrona)](https://youtu.be/_Z-ObE_N8PI)
   - **03/02** - [Aula 17: Algoritmos de eleições (Assíncrona)](https://youtu.be/F0dSgEKs8zw)
   - **08/02** - Aula 18: Dúvidas (Síncrona)
-  - **10/02** - Aula 19: Prova 02
+  - **10/02** - [Aula 19: Prova 02](https://github.com/iagoac/dce540/blob/main/provas/prova_02.pdf)
   - **15/02** - Aula 20: Correção da prova e comentários gerais (Assíncrona)
   - **08/03** - Aula 21: Consistência de dados (Assíncrona)
   - **10/03** - Aula 22: Modelos de consistência centralizados no cliente (Assíncrona)
