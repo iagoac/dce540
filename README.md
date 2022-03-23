@@ -37,8 +37,7 @@ As aulas serão todas ministradas on-line. Aulas teóricas expositivas serão re
   - **10/03** - [Aula 22: Modelos de consistência centralizados no cliente (Assíncrona)](https://youtu.be/0WxnHSKezhA)
   - **15/03** - [Aula 23: Replicação de dados (Assíncrona)](https://youtu.be/YzhXYagJ1MA)
   - **17/03** - [Aula 24: Protocolos para consistência de dados (Assíncrona)](https://youtu.be/TTO8MuCI3N0)
-  - **22/03** - Aula 25: Tolerância a falhas (Assíncrona)
-  - **24/03** - Aula 26: Tolerância a falhas - Continuação (Assíncrona)
+  - **22/03** - [Aula 25 e 26: Tolerância a falhas (Assíncrona)](https://youtu.be/mK-KTxLFdcg)
   - **29/03** - Aula 27: Dúvidas (Síncrona)
   - **31/03** - Aula 28: Prova 03
   - **05/04** - Aula 29: Correção da prova e comentários gerais (Assíncrona)
