@@ -1,0 +1,540 @@
+\documentclass[compress]{beamer}
+\usetheme{sthlm}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%        LOADING BEAMER PACKAGES
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\usepackage{
+booktabs,
+datetime,
+dtk-logos,
+graphicx,
+multicol,
+pgfplots,
+ragged2e,
+tabularx,
+tikz,
+wasysym,
+multirow,
+float,
+caption,
+subcaption
+}
+
+\pgfplotsset{compat=1.8}
+
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{newpxtext,newpxmath}
+\usepackage{listings}
+
+\lstset{ %
+language=[LaTeX]TeX,
+basicstyle=\normalsize\ttfamily,
+keywordstyle=,
+numbers=left,
+numberstyle=\tiny\ttfamily,
+stepnumber=1,
+showspaces=false,
+showstringspaces=false,
+showtabs=false,
+breaklines=true,
+frame=tb,
+framerule=0.5pt,
+tabsize=4,
+framexleftmargin=0.5em,
+framexrightmargin=0.5em,
+xleftmargin=0.5em,
+xrightmargin=0.5em
+}
+
+
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%        LOADING TIKZ LIBRARIES
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\usetikzlibrary{
+backgrounds,
+mindmap
+}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%        BEAMER OPTIONS
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\setbeameroption{show notes}
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%        BEAMER COMMANDS
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+%
+%	PRESENTATION INFORMATION
+%
+%-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+\title{Tolerância a \\ falhas}
+\subtitle{DCE540 - Computação Paralela e Distribuída}
+%\date{\small{\jobname}}
+\author{\texttt{Iago Carvalho}}
+\institute{\texttt{Departamento de Ciência da Computação}}
+
+\hypersetup{
+pdfauthor = {Iago A. Carvalho},      
+pdfsubject = {Computação Paralela e Distribuída},
+pdfkeywords = {},  
+pdfmoddate= {D:\pdfdate},          
+pdfcreator = {WriteLaTeX}
+}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+
+\end{frame}
+
+%% --------------------------------------------------------
+
+\begin{frame}{Falhas}
+
+Um sistema distribuído pode falhar
+
+\begin{itemize}
+    \item Falha em um componente
+    \item Falha no processo de comunicação entre componentes
+\end{itemize}
+
+\vspace{0.5cm}
+
+Falhas podem acontecer por diversos motivos
+
+\begin{itemize}
+    \item Quedas de energia
+    \item Ataques externos
+    \item Condições ambientais
+\end{itemize}
+
+\vspace{0.5cm}
+
+Falhas podem tornar o sistema mais lento ou inutilizável
+
+\begin{itemize}
+    \item Gerar enormes perdas materiais
+    \item Causar outros tipos de problemas
+\end{itemize}
+
+\end{frame}
+
+%% --------------------------------------------------------
+
+\begin{frame}{Conceitos básicos}
+
+Devemos estabelecer alguns conceitos básicos para melhor entendermos o que é a tolerância a erros
+
+\vspace{1cm}
+
+Os quatro principais conceitos são
+\begin{enumerate}
+    \item Disponibilidade
+    \item Confiabilidade
+    \item Segurança
+    \item Manutenibilidade
+\end{enumerate}
+\end{frame}
+
+%% --------------------------------------------------------
+
+\begin{frame}{Disponibilidade e confiabilidade}
+
+\textbf{Disponibilidade}: O sistema tem que estar pronto para uso imediato
+\begin{itemize}
+    \item A qualquer momento, o sistema tem que estar disponível
+    \item Capaz de funcionar normalmente
+    \item Alta disponibilidade é esperada
+\end{itemize}
+
+\vspace{0.5cm}
+
+\textbf{Confiabilidade}: O sistema tem que funcionar corretamente e continuamente, sem interrupções de serviço
+\begin{itemize}
+    \item Grandes janelas de tempo sem interrupções ou falhas
+    \item Um sistema confiável tem poucas falhas ou interrupções
+    \begin{itemize}
+        \item Mesmo que estas interrupções sejam grandes
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+%% --------------------------------------------------------
+
+\begin{frame}{Métrica de confiabilidade}
+
+Pode-se medir a confiabilidade de um componente levando em consideração duas métricas
+\begin{enumerate}
+    \item Tempo médio para falha ($T_f$)
+    \item Tempo médio para recuperação ($T_r$)
+\end{enumerate}
+
+\vspace{0.5cm}
+
+$$
+\textnormal{Confiabilidade} = \frac{T_f}{T_f + T_r}
+$$
+
+\vspace{0.5cm}
+
+Ainda devemos considerar que o tempo médio para falha pode diminuir com o passar do tempo
+\begin{itemize}
+    \item Desgaste físico do componente
+    \item Alterações no sistema distribuído que podem introduzir \textit{bugs}
+\end{itemize}
+\end{frame}
+%% --------------------------------------------------------
+
+\begin{frame}{Segurança e manutenibilidade}
+
+\textbf{Segurança}: Quando um sistema falha temporariamente, nenhum evento catastrófico pode ocorrer
+\begin{itemize}
+    \item Exemplos de eventos catastróficos
+    \begin{itemize}
+        \item Falha do controle de temperatura de uma usina nuclear
+        \item Sistemas controladores de tráfego aéreo deixam de monitorar certos aviões
+        \item Sistemas de vigilância deixam de identificar ameaças
+    \end{itemize}
+    \item Sistemas seguros são aqueles que não ocorrem falhas catastróficas
+\end{itemize}
+
+\vspace{0.25cm}
+
+\textbf{Manutenibilidade}: No caso de uma falha, o sistema tem que poder ser recuperado facilmente
+\begin{itemize}
+    \item Recuperação automática é desejada
+    \item Recuperação rápida
+    \item Relacionado a disponibilidade
+    \begin{itemize}
+        \item Sistema com auta manutenibilidade, em geral, tende a ter maior disponibilidade
+    \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+%% --------------------------------------------------------
+
+\begin{frame}{Falha, erro e falta}
+
+Uma \textbf{falha} é quando um componente não consegue cumprir suas premissas
+\begin{itemize}
+    \item Quando o componente não consegue funcionar corretamente
+    \item Ele não consegue prover seus serviços
+\end{itemize}
+
+\vspace{0.5cm}
+
+Um \textbf{erro} é a parte do estado do sistema que levou a falha
+\begin{itemize}
+    \item Erros na transmissão de dados
+    \item Erros no processo de criptografia
+    \item $\ldots$
+\end{itemize}
+
+\vspace{0.5cm}
+
+Uma \textbf{falta} é o que ocasionou o erro.
+\begin{itemize}
+    \item Meio de transmissão de dados comprometido
+    \item Atualização parcial do algoritmo de criptografia
+\end{itemize}
+\end{frame}
+
+%% --------------------------------------------------------
+
+\begin{frame}{Tolerância a falhas}
+
+Um componente (ou sistema) tolerante a falhas é aquele que consegue funcionar corretamente mesmo caso ocorram uma ou mais faltas
+
+\vspace{0.5cm}
+
+O componente é capaz de realizar suas tarefas mesmo com uma ou mais faltas
+\begin{itemize}
+    \item Por exemplo, aplicando protocolos de correção de erros
+    \item Acessando dados replicados
+    \item Caminhos alternativos para roteamento de mensagens
+\end{itemize}
+
+\end{frame}
+
+%% --------------------------------------------------------
+
+\begin{frame}{Periodicidade de falhas}
+
+\textbf{Transiente}: A falha ocorre uma única vez
+\begin{itemize}
+    \item Mesmo que a ação que levou a falha seja repetida, ela não ocorre novamente
+    \item Comum devido a eventos físicos
+\end{itemize}
+
+\vspace{0.35cm}
+
+\textbf{Intermitente}: A falha se repete ocasionalmente
+\begin{itemize}
+    \item O sistema funciona corretamente em alguns momentos, e não em outros
+    \item Difícil de se detectar e recuperar
+\end{itemize}
+
+\vspace{0.35cm}
+
+\textbf{Permanente}: Falhas cuja única recuperação é a substituição do componente defeituoso
+\begin{itemize}
+    \item Um disco rígido queimado
+    \item Bug de software
+    \item Cabo de transmissão de dados rompido
+\end{itemize}
+
+\end{frame}
+
+%% --------------------------------------------------------
+
+\begin{frame}{Tipos de falhas}
+
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[]
+\centering
+\label{tab:my-table11}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{cc}
+\hline
+{\textbf{Tipo de falha}} & {\textbf{Comportamento do sistema}}  \\ \hline
+Queda      & Para de funcionar                \\
+Omissão    & Falha na troca de mensagens      \\
+Timing     & Respostas são enviadas em atraso \\
+Resposta   & Uma resposta incorreta é enviada \\
+Arbitrária & Respostas arbitrárias são enviadas \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+Omissão pode ser para receber ou enviar mensagems
+
+\vspace{0.25cm}
+
+Resposta também pode ter dois tipos
+\begin{enumerate}
+    \item Valor
+    \item Fluxo de controle
+\end{enumerate}
+\end{frame}
+
+%% --------------------------------------------------------
+
+\begin{frame}{Diferenças entre sistemas síncronos e assíncronos}
+
+\textbf{Assíncrono}: Se um componente $P$ deixa de receber mensagens de outro componente $Q$, ele não pode assumir que $Q$ falhou
+\begin{itemize}
+    \item Sua única opção é continuar esperando
+    \item Diminuir o ritmo de envio de mensagens
+\end{itemize}
+
+\vspace{0.5cm}
+
+\textbf{Síncrono}: Se $P$ deixa de receber mensagens de $Q$, pode-se efetivamente assumir uma falha no sistema distribuído
+\begin{itemize}
+    \item $Q$ falhou
+    \item Caminho de $P$ para $Q$ falhou
+    \begin{itemize}
+        \item Faz-se necessário recalcular as rotas de comunicação
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+%% --------------------------------------------------------
+
+\begin{frame}{Gravidade de falhas}
+
+\textbf{Queda}: Componente $P$ pode efetivamente detectar que houve uma queda no componente $Q$
+
+\vspace{0.5cm}
+
+\textbf{Ruidosa}: Componente $P$ \textit{eventualmente} consegue detectar uma queda no componente $Q$
+
+\vspace{0.5cm}
+
+\textbf{Silenciosa}: Componente $P$ não consegue distinguir se houve uma queda em $Q$ ou se existe falhas de omissão ou timing
+
+\vspace{0.5cm}
+
+\textbf{Arbitrária}: Componente $P$ não consegue, efetivamente, detectar falha em $Q$. Mesmo se a falha for detectada, não é possível detectar o tipo da falha
+
+\end{frame}
+
+%% --------------------------------------------------------
+
+\begin{frame}{Mascaramento de falhas utilizando redundância}
+
+A melhor maneira de tornar um sistema (ou componente) tolerante a falhas é trabalharmos para tornar a falha transparente
+\begin{itemize}
+    \item Mascarar a falha de forma que o usuário não a perceba
+\end{itemize}
+    
+\vspace{0.5cm}
+
+Pode-se fazer isto efetivamente utilizando redundância
+\begin{itemize}
+    \item Redundância de informação
+    \item Redundância de tempo
+    \item Redundância física
+\end{itemize}
+\end{frame}
+
+%% --------------------------------------------------------
+
+\begin{frame}{Mascaramento de falhas utilizando redundância}
+
+\textbf{Informação}: Informação extra é utilizada para detectar erros nas mensagens
+\begin{itemize}
+    \item Códigos de correção de erros
+    \item Código de Hamming \href{https://pt.wikipedia.org/wiki/C\%C3\%B3digo\_de\_Hamming}{\beamergotobutton{Link}} 
+\end{itemize}
+
+\vspace{0.5cm}
+
+\textbf{Tempo}: Caso uma resposta não chegue após um tempo predefinido, a comunicação é realizada novamente
+\begin{itemize}
+    \item Útil em sistemas síncronos
+\end{itemize}
+
+\vspace{0.5cm}
+
+\textbf{Física}: Componentes adicionais são adicionados
+\begin{itemize}
+    \item Componente adicional é uma cópia exata de outro
+    \item Alto custo
+    \begin{itemize}
+        \item Custo financeiro
+        \item Custo computacional devido a replicação de dados
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+%% --------------------------------------------------------
+
+\begin{frame}{Detecção de falhas utilizando grupos homogêneos}
+
+Componentes são organizados em pequenos grupos
+
+\vspace{0.5cm}
+
+Em sua implementação mais simples, um grupo é composto por diversas replicações de um mesmo componente
+\begin{itemize}
+    \item Comunicações são realizadas entre grupos e não para componentes isolados
+\end{itemize}
+
+\vspace{0.5cm}
+
+Pode-se realizar uma comunicação (síncrona) dentro de um grupo
+\begin{itemize}
+    \item Uma falha é detectada se um componente deixar de responder
+\end{itemize}
+    
+\end{frame}
+
+%% --------------------------------------------------------
+
+\begin{frame}{Detecção de falhas utilizando grupos heterogêneos}
+
+Grupos são formados por diferentes componentes
+\begin{itemize}
+    \item Grupos podem ser estáticos ou dinâmicos
+    \item Cada grupo possui um coordenador
+\end{itemize}
+
+\vspace{0.5cm}
+
+O coordenador do grupo é responsável por identificar falhas nos componentes de seu grupo
+\begin{itemize}
+    \item Comunicação síncrona
+\end{itemize}
+
+\vspace{0.5cm}
+
+Mas o que acontece se o coordenador falhar?
+\end{frame}
+
+%% --------------------------------------------------------
+
+\begin{frame}{Recuperação do sistema}
+
+Após detectada a falha, um ponto importante é recuperar o funcionamento componente ou o sistema
+\begin{itemize}
+    \item Deve-se recuperar o estado correto
+    \item Deve-se recuperar os dados atualizados
+\end{itemize}
+
+\vspace{0.5cm}
+
+Pode-se fazer isso efetivamente de duas maneiras
+\begin{itemize}
+    \item Recuperação do componente (\textit{checkpoint})
+    \item Atualização do componente
+\end{itemize}
+\end{frame}
+
+%% --------------------------------------------------------
+
+\begin{frame}{Recuperação do componente}
+
+São utilizados \textit{checkpoints}
+\begin{itemize}
+    \item \textit{Backups} periódicos do estado do sistema
+\end{itemize}
+
+\vspace{0.5cm}
+
+Quando uma falha é detectada, o componente é restaurado para o seu último \textit{backup} conhecido
+
+\vspace{0.5cm}
+
+Alto custo computacional (e talvez financeiro)
+\begin{itemize}
+    \item É necessário guardar diversos \textit{backups}
+    \item Necessário espaço de armazenamento
+    \item Muitas trocas de mensagens
+    \item Hardware especializado é desejado
+\end{itemize}
+\end{frame}
+
+%% --------------------------------------------------------
+
+\begin{frame}{Atualização do componente}
+
+Quando um componente falha, pode-se tentar atualizar seu estado
+\begin{itemize}
+    \item Novo estado considerado correto
+    \item Neste novo estado, o componente pode continuar sua execução normalmente
+\end{itemize}
+
+\vspace{0.5cm}
+
+Este processo é barato, mas difícil
+\begin{itemize}
+    \item Não é necessário realizar \textit{backups} ou adquirir novos itens de hardware
+    \item Entretanto, é necessário saber exatamente qual erro ocorreu
+\end{itemize}
+
+\vspace{0.5cm}
+
+Muitas vezes, só é realizada a reinicialização do componente
+\begin{itemize}
+    \item Espera-se que o melhor aconteça
+\end{itemize}
+\end{frame}
+
+\end{document}
