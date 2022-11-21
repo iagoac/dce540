@@ -19,21 +19,21 @@ Abaixo segue o planejamento das aulas teóricas. As atividades a serem desenvolv
 
   - **27/09** - Aula 01: Introdução a disciplina DCE540
   - **28/09** - [Aula 02: Introdução a sistemas distribuídos](https://youtu.be/o95kWrMJDCE)
-  - **04/10** - [Aula 03: Processos (Assíncrona)](https://youtu.be/hbe23CGlGbY)
-  - **05/10** - [Aula 04: Fundamentos de comunicação entre processos (Assíncrona)](https://youtu.be/RfRdrYEUSAc)
-  - **11/10** - [Aula 05: Comunicação por mensagens (Assíncrona)](https://youtu.be/P1g0ImoZNXQ)
-  - **12/10** - [Aula 06: Message Passing Interface (MPI) (Assíncrona)](https://youtu.be/7Czx_pSyf6k)
-  - **18/10** - -   [Aula 07: Modelos persistentes de comunicação por mensagens (Assíncrona)](https://youtu.be/qQfd7W0HjEE)
-  - **19/10** - [Aula 08: Comunicação multicast (Assíncrona)](https://youtu.be/vAJ48HifX4s)
-  - **25/10** - [Aula 09: Remote Procedure Calls (RPC) (Assíncrona)](https://youtu.be/weTd7jlh13I)
-  - **26/10** - [Aula 10: Arquiteturas distribuídas (Assíncrona)](https://youtu.be/O2ewQnW3J_g)
-  - **01/11** - [Aula 11: Arquiteturas distribuídas - Continuação (Assíncrona)](https://youtu.be/6dzSmDMYLXE)
+  - **04/10** - [Aula 03: Processos](https://youtu.be/hbe23CGlGbY)
+  - **05/10** - [Aula 04: Fundamentos de comunicação entre processos](https://youtu.be/RfRdrYEUSAc)
+  - **11/10** - [Aula 05: Comunicação por mensagens](https://youtu.be/P1g0ImoZNXQ)
+  - **12/10** - [Aula 06: Message Passing Interface (MPI)](https://youtu.be/7Czx_pSyf6k)
+  - **18/10** - [Aula 07: Modelos persistentes de comunicação por mensagens](https://youtu.be/qQfd7W0HjEE)
+  - **19/10** - [Aula 08: Comunicação multicast](https://youtu.be/vAJ48HifX4s)
+  - **25/10** - [Aula 09: Remote Procedure Calls (RPC)](https://youtu.be/weTd7jlh13I)
+  - **26/10** - [Aula 10: Arquiteturas distribuídas](https://youtu.be/O2ewQnW3J_g)
+  - **01/11** - [Aula 11: Arquiteturas distribuídas - Continuação](https://youtu.be/6dzSmDMYLXE)
   - **02/11** - Aula 12: Feriado, período de estudos para prova
   - **15/11** - Aula 13: Feriado, período de estudos para prova
   - **16/11** - Aula 14: Prova 01
-  - **22/11** - [Aula 15: Correção da prova; Sincronização e coordenação (Assíncrona)](https://youtu.be/z6b9UGzHpUA)
-  - **23/11** - [Aula 16: Exclusão mútua (Assíncrona)](https://youtu.be/_Z-ObE_N8PI)
-  - **29/11** - [Aula 17: Algoritmos de eleições (Assíncrona)](https://youtu.be/F0dSgEKs8zw)
+  - **22/11** - [Aula 15: Correção da prova; Sincronização e coordenação](https://youtu.be/z6b9UGzHpUA)
+  - **23/11** - [Aula 16: Exclusão mútua](https://youtu.be/_Z-ObE_N8PI)
+  - **29/11** - [Aula 17: Algoritmos de eleições](https://youtu.be/F0dSgEKs8zw)
   - **30/11** - Aula 18: Dúvidas
   - **06/12** - Aula 19: Prova 02
   - **07/12** - Aula 20: Correção da prova e comentários gerais
@@ -41,8 +41,8 @@ Abaixo segue o planejamento das aulas teóricas. As atividades a serem desenvolv
   - **14/12** - [Aula 22: Modelos de consistência centralizados no cliente (Assíncrona)](https://youtu.be/0WxnHSKezhA)
   - **20/12** - Aula 23: Período de estudos
   - **17/01** - Aula 24: Fechamento das aulas 21 e 22
-  - **18/01** - [Aula 25: Replicação de dados (Assíncrona)] (https://youtu.be/YzhXYagJ1MA) e [Protocolos para consistência de dados (Assíncrona)](https://youtu.be/TTO8MuCI3N0)
-  - **24/01** - [Aula 26: Tolerância a falhas (Assíncrona)](https://youtu.be/mK-KTxLFdcg)
+  - **18/01** - [Aula 25: Replicação de dados](https://youtu.be/YzhXYagJ1MA) e [Protocolos para consistência de dados](https://youtu.be/TTO8MuCI3N0)
+  - **24/01** - [Aula 26: Tolerância a falhas](https://youtu.be/mK-KTxLFdcg)
   - **25/01** - Aula 27: Dúvidas
   - **31/01** - Aula 28: Prova 03
   - **01/02** - Aula 29: Recuperação de aprendizagem
